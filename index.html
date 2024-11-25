@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Vegan Diaries</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="css/homepage.css" rel="stylesheet"> <!-- Link to your custom CSS -->
+</head>
+
+<body class="bg-light"> <!-- Bootstrap class for light background -->
+    <div class="container-fluid d-flex flex-column">
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark bg-success py-3">
+            <a class="navbar-brand" href="#">Logo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Meals
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbardrop">
+                            <li><a class="dropdown-item" href="breakfast.html">Breakfast</a></li>
+                            <li><a class="dropdown-item" href="lunch.html">Lunch</a></li>
+                            <li><a class="dropdown-item" href="dinner.html">Dinner</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <form class="d-flex w-50 mx-auto" role="search">
+                <input class="form-control me-2 border-success rounded-pill" type="search" placeholder="Search"
+                    aria-label="Search">
+            </form>
+        </nav>
+
+        <!-- Carousel -->
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/slide1.jpg" class="d-block w-100" alt="Breakfast">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/slide2.jpg" class="d-block w-100" alt="Lunch">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/slide3.jpg" class="d-block w-100" alt="Dinner">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- Content Section -->
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card border-success shadow-sm">
+                    <img src="images/breakfast.jpg" class="card-img-top" alt="Breakfast">
+                    <div class="card-body">
+                        <h5 class="card-title">Breakfast</h5>
+                        <p class="card-text">Start your day with a healthy breakfast!</p>
+                        <a href="breakfast.html" class="btn btn-success">Learn more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-success shadow-sm">
+                    <img src="images/lunch.jpg" class="card-img-top" alt="Lunch">
+                    <div class="card-body">
+                        <h5 class="card-title">Lunch</h5>
+                        <p class="card-text">A perfect meal to energize your afternoon!</p>
+                        <a href="lunch.html" class="btn btn-success">Learn more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-success shadow-sm">
+                    <img src="images/dinner.jpg" class="card-img-top" alt="Dinner">
+                    <div class="card-body">
+                        <h5 class="card-title">Dinner</h5>
+                        <p class="card-text">Relax and unwind with a delicious dinner!</p>
+                        <a href="dinner.html" class="btn btn-success">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer text-white text-center bg-success py-3 mt-4">
+            <div class="container">
+                <span>&copy; Sanavi Kothari, 2024 | Terms Of Use | Privacy Statement</span>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
