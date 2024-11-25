@@ -1,0 +1,99 @@
+/* DEVELOPER Sanavi Kothari, IS117-004, Fall 2024 */
+
+/* General Styles */
+body {
+    background-color: #b5b35d; /* Light olive green background */
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black; /* Default text color */
+}
+
+.content {
+    padding: 30px 15px;
+    margin-top: 40px;
+}
+
+/* Apply the bg-success background color to navbar */
+.navbar {
+    background-color: #28a745 !important; /* Bootstrap Success Green */
+    padding: 1rem 1.5rem;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Cards with bg-success background */
+.card.bg-success {
+    background-color: #28a745 !important; /* Success Green */
+    color: white;
+    border: 2px solid #6DBE45; /* Border with green color */
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+/* Carousel */
+#carouselExample {
+    width: 80%;
+    margin: 30px auto;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 70vh;
+    border-radius: 8px;
+    border: 2px solid #6DBE45;
+}
+
+/* Navbar form control (search box) */
+.navbar .form-control {
+    border-radius: 20px;
+    padding-left: 15px;
+    border: 2px solid #6DBE45;
+}
+
+/* Footer with bg-success */
+.footer {
+    background-color: #28a745 !important; /* Success Green */
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    border-top: 2px solid #6DBE45;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .navbar .d-flex {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .navbar .form-control {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    #carouselExample {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .carousel-item img {
+        height: 50vh;
+    }
+
+    .card {
+        margin-bottom: 15px;
+        padding: 10px;
+    }
+}
